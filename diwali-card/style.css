@@ -633,93 +633,221 @@ body {
 
 @media (max-width: 576px) {
 
-    .invitation-wrapper {
-        margin-top: 25px;
+    /* =========================================
+   MOBILE
+========================================= */
 
-        margin-bottom: 50px;
+@media (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
     }
 
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .invitation-wrapper {
+        width: 100%;
+        margin: 20px auto 45px;
+    }
+
+
+    /* ---------- TOP ---------- */
 
     .welcome {
-        font-size: 12px;
-
+        font-size: 11px;
         letter-spacing: 2px;
+        margin-bottom: 8px;
     }
-
 
     .main-title {
-        font-size: 52px;
+        font-size: 48px;
+        line-height: 1.05;
     }
-
 
     .family-name {
-        padding: 0 10px;
-
-        font-size: 16px;
+        padding: 0 5px;
+        margin: 12px 0 20px;
+        font-size: 15px;
+        line-height: 1.4;
     }
 
+
+    /* ---------- PHOTO ---------- */
 
     .photo-card {
-        height: 290px;
-
-        border-radius: 20px;
+        width: 100%;
+        height: 280px;
+        padding: 5px;
+        border-width: 2px;
+        border-radius: 18px;
     }
-
 
     .couple-photo {
-        border-radius: 14px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 13px;
     }
-
 
     .photo-overlay {
-        left: 6px;
-
-        right: 6px;
-
-        bottom: 6px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        padding: 40px 10px 12px;
+        border-radius: 0 0 13px 13px;
     }
-
 
     .photo-overlay p {
-        font-size: 16px;
-    }
-
-
-    .celebrate-button {
-        padding: 14px 22px;
-
         font-size: 15px;
     }
 
 
-    .details-card {
-        padding: 28px 15px;
+    /* ---------- BUTTON ---------- */
 
-        border-radius: 22px;
+    .celebrate-button {
+        width: 100%;
+        max-width: 310px;
+        margin-top: 25px;
+        padding: 13px 15px;
+        font-size: 14px;
     }
 
+    .click-text {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+
+    /* ---------- DETAILS CARD ---------- */
+
+    .details-card {
+        width: 100%;
+        margin: 45px auto 30px;
+        padding: 25px 14px;
+        border-width: 3px;
+        border-radius: 20px;
+    }
+
+    .diya {
+        font-size: 45px;
+    }
 
     .details-card h2 {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 1.2;
     }
 
+    .gold-line {
+        width: 60%;
+        margin: 15px auto;
+    }
+
+
+    /* ---------- EVENT DETAILS ---------- */
 
     .event-info p {
-        font-size: 16px;
+        margin: 12px 5px;
+        font-size: 15px;
+        line-height: 1.4;
     }
-
 
     .message {
-        font-size: 17px;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
 
+    /* ---------- ACTIVITIES ---------- */
+
+    .activities {
+        margin-top: 20px;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .activity {
+        margin: 4px;
+        padding: 10px 5px;
+        border-radius: 12px;
+    }
+
     .activity span {
+        font-size: 23px;
+    }
+
+    .activity small {
+        font-size: 11px;
+    }
+
+
+    /* ---------- DINNER ---------- */
+
+    .dinner {
+        margin-top: 20px;
+    }
+
+    .dinner p {
+        font-size: 14px;
+    }
+
+    .dinner h3 {
+        font-size: 28px;
+    }
+
+
+    /* ---------- ENDING ---------- */
+
+    .ending {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .see-you {
+        width: auto;
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 360px) {
+
+    .main-title {
+        font-size: 42px;
+    }
+
+    .family-name {
+        font-size: 14px;
+    }
+
+    .photo-card {
+        height: 250px;
+    }
+
+    .celebrate-button {
+        font-size: 13px;
+        padding: 12px 10px;
+    }
+
+    .details-card h2 {
         font-size: 25px;
     }
 
+    .event-info p {
+        font-size: 14px;
+    }
 
-    .activity small {
-        font-size: 12px;
+    .message {
+        font-size: 15px;
     }
 }
+    }
