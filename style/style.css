@@ -1,0 +1,725 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #fff8e7;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #7c1d63 0%,
+            #4b0d4d 30%,
+            #27052f 65%,
+            #120018 100%
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.invitation-wrapper {
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 30px auto 80px;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.welcome {
+    margin: 0 0 8px;
+
+    color: #ffd54f;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 8px #ff9800,
+        0 0 18px rgba(255, 193, 7, 0.5);
+}
+
+
+.main-title {
+    margin: 0;
+
+    color: #ffd54f;
+
+    font-family: cursive;
+
+    font-size: clamp(55px, 10vw, 90px);
+
+    line-height: 1;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 8px #ff9800,
+        0 0 20px #ff9800,
+        0 0 40px rgba(255, 152, 0, 0.8);
+}
+
+
+.family-name {
+    margin: 15px 0 25px;
+
+    color: #fff1b8;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 8px rgba(255, 193, 7, 0.7);
+}
+
+
+/* =========================================
+   PHOTO
+========================================= */
+
+.photo-card {
+    width: 100%;
+
+    max-width: 600px;
+
+    height: 360px;
+
+    margin: 0 auto;
+
+    padding: 6px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #3a093d;
+
+    border: 3px solid #ffc107;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 15px #ffc107,
+        0 0 35px rgba(255, 152, 0, 0.6),
+        0 0 70px rgba(255, 193, 7, 0.2);
+}
+
+
+.couple-photo {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 18px;
+}
+
+
+/* =========================================
+   PHOTO OVERLAY
+========================================= */
+
+.photo-overlay {
+    position: absolute;
+
+    left: 6px;
+
+    right: 6px;
+
+    bottom: 6px;
+
+    padding: 45px 15px 15px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.85)
+        );
+
+    border-radius:
+        0 0 18px 18px;
+}
+
+
+.photo-overlay p {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 2px 8px #000000;
+}
+
+
+/* =========================================
+   HEARTBEAT ❤️
+========================================= */
+
+.heart {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    transform-origin: center;
+
+    animation:
+        heartbeat 1.1s infinite;
+}
+
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.35);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.35);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================
+   BIG BUTTON
+========================================= */
+
+.celebrate-button {
+    margin-top: 30px;
+
+    padding: 17px 40px;
+
+    border: 3px solid #ffe082;
+
+    border-radius: 50px;
+
+    background: #ffc107;
+
+    color: #40132f;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 12px #ffc107,
+        0 0 30px #ff9800,
+        0 0 50px rgba(255, 152, 0, 0.5);
+
+    animation:
+        buttonGlow 1.5s infinite alternate;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.celebrate-button:hover {
+    transform: scale(1.08);
+
+    background: #ffd54f;
+}
+
+
+@keyframes buttonGlow {
+
+    from {
+
+        box-shadow:
+            0 0 10px #ffc107,
+            0 0 25px #ff9800;
+    }
+
+    to {
+
+        box-shadow:
+            0 0 25px #ffc107,
+            0 0 50px #ff9800,
+            0 0 70px rgba(255, 193, 7, 0.5);
+    }
+}
+
+
+.click-text {
+    margin-top: 10px;
+
+    color: #ffe9a6;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 6px rgba(255, 193, 7, 0.5);
+}
+
+
+/* =========================================
+   DETAILS CARD
+========================================= */
+
+.details-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 60px auto 40px;
+
+    padding: 35px 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf2,
+            #fff0c8
+        );
+
+    color: #4b173f;
+
+    border: 4px solid #ffc107;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 0 20px #ffc107,
+        0 0 45px rgba(255, 152, 0, 0.5);
+
+    opacity: 0;
+
+    transform:
+        translateY(80px)
+        scale(0.9);
+
+    pointer-events: none;
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+
+.details-card.show {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+    pointer-events: auto;
+}
+
+
+/* =========================================
+   DIYA
+========================================= */
+
+.diya {
+    font-size: 55px;
+
+    animation:
+        diyaGlow 1.2s infinite alternate;
+}
+
+
+@keyframes diyaGlow {
+
+    from {
+
+        transform: scale(1);
+
+        filter:
+            drop-shadow(0 0 5px orange);
+    }
+
+    to {
+
+        transform: scale(1.08);
+
+        filter:
+            drop-shadow(0 0 15px orange)
+            drop-shadow(0 0 30px gold);
+    }
+}
+
+
+/* =========================================
+   DETAILS TITLE
+========================================= */
+
+.details-card h2 {
+    margin: 10px 0 0;
+
+    color: #9c1f63;
+
+    font-size: 38px;
+
+    font-weight: bold;
+}
+
+
+.gold-line {
+    width: 70%;
+
+    height: 2px;
+
+    margin: 20px auto;
+
+    background: #d69a00;
+}
+
+
+/* =========================================
+   EVENT DETAILS
+========================================= */
+
+.event-info p {
+    margin: 15px;
+
+    color: #5b1948;
+
+    font-size: 19px;
+}
+
+
+.event-info strong {
+    color: #35102d;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.message {
+    margin-top: 25px;
+
+    color: #632044;
+
+    font-size: 20px;
+}
+
+
+.message strong {
+    color: #a51f5c;
+}
+
+
+/* =========================================
+   ACTIVITIES
+========================================= */
+
+.activities {
+    margin-top: 25px;
+}
+
+
+.activity {
+    margin: 5px;
+
+    padding: 12px 8px;
+
+    background:
+        rgba(255, 255, 255, 0.8);
+
+    border: 1px solid #e1b84b;
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.activity:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 5px 15px rgba(100, 50, 0, 0.25);
+}
+
+
+.activity span {
+    display: block;
+
+    font-size: 28px;
+}
+
+
+.activity small {
+    color: #4b173f;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   DINNER
+========================================= */
+
+.dinner {
+    margin-top: 25px;
+}
+
+
+.dinner p {
+    margin: 0;
+
+    color: #7b3b5d;
+
+    font-size: 16px;
+}
+
+
+.dinner h3 {
+    margin: 5px 0 0;
+
+    color: #c45f00;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ENDING
+========================================= */
+
+.ending {
+    margin-top: 25px;
+
+    color: #633650;
+
+    font-size: 16px;
+
+    font-style: italic;
+}
+
+
+.see-you {
+    margin-top: 5px;
+
+    padding: 11px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   FIREWORKS
+========================================= */
+
+#fireworks {
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 100;
+}
+
+
+.firework {
+    position: absolute;
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    animation:
+        explode 1.6s ease-out forwards;
+}
+
+
+@keyframes explode {
+
+    0% {
+
+        transform: scale(0);
+
+        opacity: 1;
+    }
+
+    25% {
+
+        transform: scale(1);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: scale(15);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .invitation-wrapper {
+        margin-top: 25px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .welcome {
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .main-title {
+        font-size: 52px;
+    }
+
+
+    .family-name {
+        padding: 0 10px;
+
+        font-size: 16px;
+    }
+
+
+    .photo-card {
+        height: 290px;
+
+        border-radius: 20px;
+    }
+
+
+    .couple-photo {
+        border-radius: 14px;
+    }
+
+
+    .photo-overlay {
+        left: 6px;
+
+        right: 6px;
+
+        bottom: 6px;
+    }
+
+
+    .photo-overlay p {
+        font-size: 16px;
+    }
+
+
+    .celebrate-button {
+        padding: 14px 22px;
+
+        font-size: 15px;
+    }
+
+
+    .details-card {
+        padding: 28px 15px;
+
+        border-radius: 22px;
+    }
+
+
+    .details-card h2 {
+        font-size: 30px;
+    }
+
+
+    .event-info p {
+        font-size: 16px;
+    }
+
+
+    .message {
+        font-size: 17px;
+    }
+
+
+    .activity span {
+        font-size: 25px;
+    }
+
+
+    .activity small {
+        font-size: 12px;
+    }
+}
